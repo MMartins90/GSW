@@ -1,0 +1,19 @@
+.about-main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+  padding-top: 60px;
+}
+
+#title {
+  color: #81D8CC;
+ font-size: 24px;
+}
+
+.about-info {
+  color: lightslategray;
+  font-size: 18px;
+}
