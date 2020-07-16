@@ -29,6 +29,13 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+    $(document).ready(function() {
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 400) {
+          $('.navbar').addClass('solid');
+      } else {
+          $('.navbar').removeClass('solid');
+      };
+    });
+  });
 });
