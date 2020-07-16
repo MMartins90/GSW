@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+.home-info {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  padding-top: 60px;
+}
+
+#home-intro {
+  display: inline-block;
+  width: 700px;
+}
+
+.latest-jobs h1 {
+  color: #81D8CC;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  padding-top: 20px;
+}
+
+.client-recomendations {
+  color: #81D8CC;
+  font-size: 20px;
+  text-align: center;
+}
