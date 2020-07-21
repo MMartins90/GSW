@@ -13,4 +13,15 @@
       We offer a fully confidential service where we will provide advice and get an understanding of your requirements.
       Please fill out the form below or contact us on the details above.</p>
 </div>
+
+<div>
+  <%= simple_form_for(@contact) do |f| %>
+    <%= f.input :full_name %>
+    <%= f.input :company_name %>
+    <%= f.input :contact_number %>
+    <%= f.input :email%>
+    <%= f.input :message %>
+    <%= f.submit %>
+  <% end %>
+</div>
 </div>
