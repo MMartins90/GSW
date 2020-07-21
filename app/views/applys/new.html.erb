@@ -1,0 +1,7 @@
+<%= simple_form_for(@apply) do |f| %>
+  <%= f.input :full_name %>
+  <%= f.input :location %>
+  <%= f.input :cover_letter, as: :file %>
+  <%= f.input :cv, as: :file %>
+  <%= f.submit %>
+<% end %>
