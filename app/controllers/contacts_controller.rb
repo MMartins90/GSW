@@ -8,8 +8,13 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.new(contact_params)
-    if job.deliver
-      redirect_to contact_path, notice: 'Message Sent!'
+    @contact.request = request
+    if @contact.deliver
+      flash.now[:error] = nil
+      redirect_to root_path, notice: 'Message sent successfully'
+    else
+      flash.now[:error] = 'Cannot send message'
+      render :new
     end
   end
 
