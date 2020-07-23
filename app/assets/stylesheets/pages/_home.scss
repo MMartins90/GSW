@@ -11,7 +11,7 @@
   width: 700px;
 }
 
-.latest-jobs h1 {
+#latest-jobs h1 {
   color: #81D8CC;
   text-align: center;
   top: 50%;
@@ -23,4 +23,14 @@
   color: #81D8CC;
   font-size: 20px;
   text-align: center;
+}
+
+.fas {
+  text-decoration: none;
+  color: white;
+  margin-top: 16px;
+    &:hover {
+      transform: scale(1.15);
+      transition: 0.4s;
+  }
 }
