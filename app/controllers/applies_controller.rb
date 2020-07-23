@@ -1,13 +1,16 @@
-class ApplysController < ApplicationController
+class AppliesController < ApplicationController
   def new
     @apply = Apply.new
   end
 
   def create
     @apply = Apply.new(job_params)
-    if job.save
-      redirect_to jobs_path, notice: 'Job succsfully created'
+    @apply.request = request
+    if @apple.deliver
+      flash.now[:error] = nil
+      redirect_to root_path, notice: 'Message sent successfully'
     else
+      flash.now[:error] = 'Cannot send message'
       render :new
     end
   end
