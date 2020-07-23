@@ -9,7 +9,7 @@ class JobsController < ApplicationController
 
   def create
     @job = Job.new(job_params)
-    if job.save
+    if Job.save
       redirect_to jobs_path, notice: 'Job succsfully created'
     else
       render :new
@@ -27,7 +27,7 @@ class JobsController < ApplicationController
   end
 
   def destroy
-    @job = job.find(params[:id])
+    @job = Job.find(params[:id])
     @job.destroy
     redirect_to jobs_path
   end
