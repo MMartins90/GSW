@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  position: absolute;
+  height: 50px;
+  background-color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  box-shadow: lightslategray;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin: 5px;
+  color: #81D8CC;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
