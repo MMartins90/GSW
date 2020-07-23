@@ -1,29 +1,43 @@
 .footer {
   display: flex;
   position: absolute;
-  height: 50px;
   background-color: white;
-  bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
   box-shadow: lightslategray;
+  padding: 60px;
+  min-width: 50vh;
 }
 
 .footer-copyright {
   text-align: center;
-  margin: 5px;
   color: #81D8CC;
-  display: flex;
   align-items: center;
+  font-size: 16px;
 }
 
 .footer-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
+  text-align: center;
+  padding: 60px;
+  display: flex;
 }
 
-.login {
-  display: flex;
+.foot-list {
+  color: slategrey;
   align-items: center;
+  font-size: 14px;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+
+.foot-list:hover {
+  color: #81D8CC;
+  text-decoration: none;
 }
