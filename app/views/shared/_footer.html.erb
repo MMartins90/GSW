@@ -1,10 +1,29 @@
 <div class="footer-container">
   <div class="footer">
-    <div class="footer-copyright">
-      GSW Consultancy
-    </div>
-    <div class="login">
-      <%= link_to "Employee Login", jobs_path %>
-    </div>
+    <div class="col-xs-12 col-sm-3">
+     <div class="footer-copyright">
+        <h3>GSW Consultancy</h3>
+      </div>
+      <ul class="list-ul">
+        <li>
+          <%= link_to "Home", root_path,  class: "foot-list"  %>
+        </li>
+        <li>
+          <%= link_to "Jobs", jobs_path,  class: "foot-list"   %>
+        </li>
+        <li>
+          <%= link_to "Sectors", sectors_path,  class: "foot-list"  %>
+        </li>
+        <li>
+          <%= link_to "Contact us", new_contact_path,  class: "foot-list" %>
+        </li>
+        <li>
+          <%= link_to "About us", about_path,  class: "foot-list" %>
+        </li>
+        <li>
+          <%= link_to "Login", jobs_path,  class: "foot-list" %>
+        </li>
+      </ul>
+     </div>
   </div>
 </div>
