@@ -1,8 +1,10 @@
-<%= simple_form_for(@job) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :location %>
-  <%= f.input :salary %>
-  <%= f.input :sector %>
-  <%= f.input :description %>
-  <%= f.submit %>
-<% end %>
+<div class="form">
+  <%= simple_form_for(@job) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :location %>
+    <%= f.input :salary %>
+    <%= f.input :sector %>
+    <%= f.input :description %>
+    <%= f.submit %>
+  <% end %>
+</div>
