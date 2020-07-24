@@ -22,7 +22,11 @@
           <%= link_to "About us", about_path,  class: "foot-list" %>
         </li>
         <li>
-          <%= link_to "Employee Login", new_user_session_path,  class: "foot-list" %>
+          <% if user_signed_in? %>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "foot-list" %>
+          <% else %>
+              <%= link_to "Employee Login", new_user_session_path,  class: "foot-list" %>
+          <% end %>
         </li>
       </ul>
      </div>
