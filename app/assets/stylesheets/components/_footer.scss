@@ -1,43 +1,85 @@
 .footer {
-  display: flex;
   position: absolute;
   background-color: white;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
   box-shadow: lightslategray;
-  padding: 60px;
+  padding-top: 20px;
   min-width: 50vh;
+  bottom: 0;
+  // display: flex;
+  height: 180px;
 }
 
-.footer-copyright {
-  text-align: center;
-  color: #81D8CC;
-  align-items: center;
-  font-size: 16px;
+#footer-logo img {
+ height: 135px;
+ position: absolute;
+ left: 15%;
 }
+
+.vl2 {
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  height: 150px;
+  left: 50%;
+  top: 0;
+  padding-left: 130px;
+  padding-right: 130px;
+  align-items: center;
+  display: table;
+}
+
+// .vl2 {
+//   border-left: 2px solid lightgray;
+//   height: 150px;
+//   position: absolute;
+//   left: 50%;
+//   margin-left: -3px;
+//   top: 0;
+// }
 
 .footer-container {
   position: relative;
   min-height: 50vh;
-  text-align: center;
   padding: 60px;
   display: flex;
 }
 
+.footer-list {
+  position: relative;
+  display: flex; 
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  margin: auto;
+}
+
 .foot-list {
-  color: slategrey;
+  color: gray;
   align-items: center;
   font-size: 14px;
-  display: flex;
 }
 
 ul {
   list-style: none;
-  display: inline;
 }
 
 .foot-list:hover {
-  color: #81D8CC;
+  color: black;
   text-decoration: none;
+}
+
+.vl {
+  border-left: 6px;
+  height: 100px;
+  border-color: #81D8CC;
+}
+
+.gsw-email {
+  height: 135px;
+  position: absolute;
+  left: 35%;
+  color: gray;
 }
