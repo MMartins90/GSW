@@ -13,12 +13,13 @@
                 <p class="card-text"><%= job.description %></p>
               </div>
               <div class="card-footer text-center bg-white">
-                <%= link_to "Apply Now",  jobs_path, class: "btn btn-green hvr-float-shadow"%>
-              </div>
-            <% if user_signed_in? %>
+              <% if user_signed_in? %>
               <%= link_to 'Edit', edit_job_path(job), class: "btn btn-green hvr-float-shadow" %>
               <%= link_to 'Delete', job_path(job), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-green hvr-float-shadow" %>
+            <% else %>
+                <%= link_to "Apply Now",  jobs_path, class: "btn btn-green hvr-float-shadow"%>             
             <% end %>
+            </div>
           </div>
         </div>
       <% end %>
