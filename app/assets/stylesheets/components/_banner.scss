@@ -38,13 +38,23 @@
 }
 
 .jobs-banner {
-  background-image: linear-gradient(0deg, rgba(131,217,205,0.75) 0%, rgba(57,126,123,0.75) 57%), asset-url("jobs_banner.png");
+  background-image: linear-gradient(0deg, rgba(131,217,205,0.75) 0%, rgba(57,126,123,0.75) 57%), asset-url("jobs-banner.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
   text-align: center;
   padding: 200px;
 }
+
+.contact-banner {
+  background-image: linear-gradient(0deg, rgba(131,217,205,0.75) 0%, rgba(57,126,123,0.75) 57%), asset-url("contact-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  text-align: center;
+  padding: 200px;
+}
+
 
 #sectors-banner h1 {
   margin: 0;
@@ -56,7 +66,7 @@
 }
 
 .about-banner {
-  background-image: linear-gradient(0deg, rgba(131,217,205,0.75) 0%, rgba(57,126,123,0.75) 57%), asset-url("construction-hardhats.png");
+  background-image: linear-gradient(0deg, rgba(131,217,205,0.75) 0%, rgba(57,126,123,0.75) 57%), asset-url("about-us-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
