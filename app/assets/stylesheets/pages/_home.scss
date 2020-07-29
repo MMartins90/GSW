@@ -7,16 +7,18 @@
 }
 
 #home-intro {
-  display: inline-block;
-  width: 700px;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 #latest-jobs h1 {
-  color: #81D8CC;
+  color: white;
   text-align: center;
   top: 50%;
   left: 50%;
   padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 .client-recomendations {
@@ -39,16 +41,14 @@
   background-image: linear-gradient(0deg, rgba(131,217,205,0.55) 0%, rgba(57,126,123,0.55) 57%), asset-url("gsw-home-image.jpg");
   background-size: cover;
   height: 530px;
-  margin-top: 60px;
-  border-radius: 10px;
-  box-shadow: 0px 22px 43px -19px rgba(0,0,0,0.9);
+  // margin-top: 60px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
   z-index: 100;
   text-align: center;
 }
 
 .client-recomendations {
   padding: 80px;
-  background-color: #5A9F94;
 }
 
 .carousel-item-quote {
@@ -57,8 +57,8 @@
   font-size: 16px;
   padding: 12px;
   background-color: white;
-  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.3);
-  border-radius: 12px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.3);
+  border-radius: 3px;
   height: 300px;
   margin: 20px;
 }
