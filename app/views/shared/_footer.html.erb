@@ -1,14 +1,11 @@
 <div class="footer-container">
+  <div id="footer-logo">
+    <%= link_to root_path, class: "footer-brand" do %>
+      <%= image_tag "logo.png" %>
+    <% end %>
+  </div>
   <div class="footer">
-<!-- <div class="vl1"> -->
-    <div id="footer-logo">
-      <%= link_to root_path, class: "footer-brand" do %>
-        <%= image_tag "logo.png" %>
-      <% end %>
-    </div>
-<!-- </div> -->
       <div class="footer-list">
-        <div class="vl2">
           <ul class="list-ul">
             <li>
               <%= link_to "Home", root_path,  class: "foot-list"  %>
@@ -19,6 +16,8 @@
             <li>
               <%= link_to "Sectors", sectors_path,  class: "foot-list"  %>
             </li>
+          </ul>
+          <ul class="list-ul">
             <li>
               <%= link_to "Contact us", new_contact_path,  class: "foot-list" %>
             </li>
@@ -34,9 +33,9 @@
             </li>
           </ul>
         </div>
-        <div class="gsw-email">
-          <p>Info@gswconsultancy.com</p>
-        </div>
       </div>
+    <div class="gsw-email">
+      <p>Info@gswconsultancy.com</p>
+    </div>
   </div>
 </div>
