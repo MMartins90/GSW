@@ -26,6 +26,14 @@
   opacity: 0.95;
 }
 
+.nav-item {
+  padding-right: 36px;
+    &:hover {
+      transform: scale(1.15);
+      transition: 0.2s;
+    }
+}
+
 .navbar-brand {
   padding: 0px;
   margin: 0px;
