@@ -7,12 +7,14 @@
 .footer {
   box-shadow: lightslategray;
   display: flex;
-  height: 140px;
-
+  height: 130px;
+  border-left: 3px solid lightgray;
+  border-right: 3px solid lightgray;
+  margin-top: 10px;
 }
 
 #footer-logo img {
- height: 140px;
+ height: 150px;
 }
 
 .footer-list {
