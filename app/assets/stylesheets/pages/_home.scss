@@ -38,16 +38,16 @@
 #latest-jobs {
   background-image: linear-gradient(0deg, rgba(131,217,205,0.55) 0%, rgba(57,126,123,0.55) 57%), asset-url("gsw-home-image.jpg");
   background-size: cover;
-  background: linear-gradient(65deg, rgba(96,219,204,0.2) 66%);
-  height: 500px;
+  height: 530px;
   margin-top: 60px;
-  margin-bottom: 60px;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 22px 43px -19px rgba(0,0,0,0.9);
+  z-index: 100;
 }
 
 .client-recomendations {
   padding: 80px;
+  background-color: #5A9F94;
 }
 
 .carousel-item-quote {
@@ -55,18 +55,29 @@
   color: black;
   font-size: 16px;
   padding: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.3);
+  border-radius: 12px;
+  height: 300px;
+  margin: 20px;
 }
 
 .carousel-inner {
-  text-align: center;
-  padding: 10px;
+  height: 340px;
+  width: 500px;
+  margin: 0 auto;
 }
 
-.carousel-item {
-  background-color: white;
-  margin-right: 0px;
-  width: 500px;
-  height: 300px;
+.carousel-item-active {
   box-shadow: -2px -2px 24px 3px rgba(199,195,199,0.82);
   border-radius: 8px;
+}
+
+.carousel-control-prev {
+  // background-color: black;
+}
+
+.carousel-control-next {
+  // background-color: black;
+  // margin: 0px;
 }
