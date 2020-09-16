@@ -3,7 +3,14 @@ class JobsController < ApplicationController
   before_action :set_user, only: [:new, :create]
 
   def index
-    @job = Job.all
+    if params[:search].present? && params[:search][:query].present?
+      @jobs = Job.search_by_job_and_sector_and_salary,(params[:search][:query])
+      # @jobs = Job.all
+    elsif params[:category]
+      @Jobs = Job.where(:category => params[:category])
+    else
+      @Jobs = Job.all
+    end
   end
 
   def new
